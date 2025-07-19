@@ -53,7 +53,7 @@
                     echo "🚀 Happy coding!"
                     echo ""
                   '';
-                
+                }
               ];
             };
           });
