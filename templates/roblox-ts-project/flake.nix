@@ -32,7 +32,7 @@
               modules = [
                 {
                   # https://devenv.sh/reference/options/
-                  packages = [ pkgs.rojo pkgs.nodejs_24 pkgs.pnpm_9];
+                  packages = [ pkgs.rojo pkgs.nodejs_23 pkgs.pnpm_9];
 
                   enterShell = ''
                     echo ""
