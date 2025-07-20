@@ -1,0 +1,4 @@
+.devenv
+node_modules
+dist
+out
