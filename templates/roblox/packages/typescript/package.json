@@ -1,16 +1,24 @@
 {
-  "name": "@rbxts/packages",
+  "name": "@rbxts/my-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "My package description",
+  "author": "me",
   "main": "out/init.lua",
   "scripts": {
+    "install-dependencies": "bun install && (cd tests && bun install)",
     "build": "rbxtsc",
-    "watch": "rbxtsc -w",
-    "prepublishOnly": "pnpm run build",
+    "dev": "bun run build -- -w",
+    "prepublishOnly": "bun test",
     "test": "bun run build && bun run build -- -p tests && rojo build tests -o tests/test-environment.rbxl && lune run tests tests/test-environment.rbxl"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "roblox",
+    "rbxts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me/my-repo.git"
+  },
   "license": "ISC",
   "types": "out/index.d.ts",
   "files": [
@@ -21,9 +29,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "@rbxts/compiler-types": "3.0.0-types.0",
-    "@rbxts/types": "^1.0.864",
-    "roblox-ts": "^3.0.0",
-    "typescript": "^5.8.3"
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.813",
+    "roblox-ts": "npm:@wad4444/roblox-ts@^1.0.2",
+    "typescript": "^5.5.3"
   }
 }
