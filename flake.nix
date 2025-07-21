@@ -4,10 +4,12 @@
   outputs = { self, nixpkgs, ... }@inputs: {
     templates = {
 
-      roblox-ts-project = {
-        path = ./templates/roblox-ts-project;
+      rbx-package = {
+        path = ./templates/roblox/packages/typescript;
         description = ''
-          Minimal starting project for nix-based Roblox TypeScript development
+          A template for creating Roblox packages using TypeScript.
+          This template includes a development environment with tools like Rojo, Bun, run-in-roblox, and Lune.
+          It is designed to help you quickly set up a Roblox package with TypeScript support.
         '';
       };
     };

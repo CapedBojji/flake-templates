@@ -49,6 +49,7 @@
                     echo "  • rojo          - Roblox project management and sync tool"
                     echo "  • bun           - Fast JavaScript runtime and package manager"
                     echo "  • run-in-roblox - Custom tool for running code in Roblox Studio"
+                    echo "  • lune          - Luau scripting runtime for automation and tooling"
                     echo ""
                     echo "🚀 Ready to build awesome Roblox experiences with TypeScript!"
                     echo ""
