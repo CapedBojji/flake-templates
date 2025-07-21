@@ -37,34 +37,20 @@
               modules = [
                 {
                   # https://devenv.sh/reference/options/
-                  packages = [ pkgs.python3 pkgs.firefox run-in-roblox ];
+                  packages = [ pkgs.rojo pkgs.bun run-in-roblox pkgs.lune ];
 
                   enterShell = ''
                     echo ""
-                    echo "██████╗  ██████╗ ████████╗"
-                    echo "██╔══██╗██╔═══██╗╚══██╔══╝"
-                    echo "██████╔╝██║   ██║   ██║   "
-                    echo "██╔══██╗██║   ██║   ██║   "
-                    echo "██████╔╝╚██████╔╝   ██║   "
-                    echo "╚═════╝  ╚═════╝    ╚═╝   "
+                    echo "🎮 Welcome to the Roblox TypeScript Development Environment! 🎮"
                     echo ""
-                    echo "  █████╗ ████████╗ ██████╗ ███████╗"
-                    echo " ██╔══██╗╚══██╔══╝██╔═══██╗╚══███╔╝"
-                    echo " ███████║   ██║   ██║   ██║  ███╔╝ "
-                    echo " ██╔══██║   ██║   ██║   ██║ ███╔╝  "
-                    echo " ██║  ██║   ██║   ╚██████╔╝███████╗"
-                    echo " ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝"
+                    echo "This environment is configured for Roblox-TS package development."
                     echo ""
-                    echo "🤖 Amazon A to Z Shift Picker Bot 🤖"
+                    echo "📦 Available packages:"
+                    echo "  • rojo          - Roblox project management and sync tool"
+                    echo "  • bun           - Fast JavaScript runtime and package manager"
+                    echo "  • run-in-roblox - Custom tool for running code in Roblox Studio"
                     echo ""
-                    echo "📋 Ready to hunt for those shifts!"
-                    echo "💪 Automated shift grabbing at your service"
-                    echo ""
-                    echo "🔧 Development Environment:"
-                    echo "  • Python 3   - Bot runtime"
-                    echo "  • Firefox     - Web automation"
-                    echo ""
-                    echo "⚡ Let's secure those shifts! ⚡"
+                    echo "🚀 Ready to build awesome Roblox experiences with TypeScript!"
                     echo ""
                   '';
                 }

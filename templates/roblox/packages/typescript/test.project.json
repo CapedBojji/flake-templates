@@ -1,11 +1,17 @@
 {
-    "name": "TestProject",
-    "tree": {
-        "$classname": "DataModel",
-
-        "ServerScriptService": {
-            "$classname": "ServerScriptService",
-            "$path": "src"
-        }
+    "name": "example-build",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out",
+                "Tests": {
+                    "$className": "Folder",
+                    "$path": "out/tests"
+                }
+			}
+		}
     }
 }

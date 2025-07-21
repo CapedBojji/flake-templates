@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "test": "bun run build && bun run build -- -p tests && rojo build tests -o tests/test-environment.rbxl && lune run tests tests/test-environment.rbxl"
   },
   "keywords": [],
   "author": "",
@@ -24,9 +25,5 @@
     "@rbxts/types": "^1.0.864",
     "roblox-ts": "^3.0.0",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "@rbxts/runit": "^1.4.2",
-    "@rbxts/services": "^1.5.5"
   }
 }
