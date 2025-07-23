@@ -41,9 +41,10 @@
 
                   enterShell = ''
                     echo ""
-                    echo "🎮 Welcome to the Roblox TypeScript Development Environment! 🎮"
+                    echo "🎮 Welcome to the Roblox TypeScript Game Development Environment! 🎮"
                     echo ""
-                    echo "This environment is configured for Roblox-TS package development."
+                    echo "This environment is configured for Roblox game development using"
+                    echo "TypeScript with ECS (Entity Component System) architecture."
                     echo ""
                     echo "📦 Available packages:"
                     echo "  • rojo          - Roblox project management and sync tool"
@@ -51,7 +52,7 @@
                     echo "  • run-in-roblox - Custom tool for running code in Roblox Studio"
                     echo "  • lune          - Luau scripting runtime for automation and tooling"
                     echo ""
-                    echo "🚀 Ready to build awesome Roblox experiences with TypeScript!"
+                    echo "🏗️ Ready to build scalable Roblox games with ECS architecture!"
                     echo ""
                   '';
                 }
