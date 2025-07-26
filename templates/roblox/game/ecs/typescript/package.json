@@ -27,7 +27,9 @@
 		"prod:sync": "rojo serve ./build.project.json"
 	},
 	"lint-staged": {
-		"*": "eslint --fix --max-warnings 0 --no-warn-ignored"
+		"*": [
+			"bash -c 'if [[ \"$0\" != *\".direnv\"* && \"$0\" != *\".devenv\"* ]]; then eslint \"$0\" --fix --max-warnings 0 --no-warn-ignored; fi'"
+		]
 	},
 	"dependencies": {
 		"@flamework/core": "catalog:prod",
