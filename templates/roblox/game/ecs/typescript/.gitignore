@@ -1,5 +1,20 @@
+/node_modules
+/out
+/include
+*.tsbuildinfo
+flamework.build
+
+# Misc
+.DS_Store
+
+/dist
+sourcemap.json
+*.rbxl.lock
+*.rbxl
+*.rbxlx
+
+# Bundled eslint config
+*.mjs
+
+.env
 .devenv
-node_modules
-dist
-out
-**/*/flamework.build

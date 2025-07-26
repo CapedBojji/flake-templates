@@ -37,22 +37,22 @@
               modules = [
                 {
                   # https://devenv.sh/reference/options/
-                  packages = [ pkgs.rojo pkgs.bun run-in-roblox pkgs.lune ];
+                  packages = [ pkgs.rojo pkgs.pnpm_9 run-in-roblox pkgs.lune pkgs.nodejs_22 ];
 
                   enterShell = ''
                     echo ""
-                    echo "🎮 Welcome to the Roblox TypeScript Game Development Environment! 🎮"
+                    echo "🎮 Welcome to the Roblox TypeScript Development Environment! 🎮"
                     echo ""
-                    echo "This environment is configured for Roblox game development using"
-                    echo "TypeScript with ECS (Entity Component System) architecture."
+                    echo "This environment is configured for Roblox-TS package development."
                     echo ""
                     echo "📦 Available packages:"
                     echo "  • rojo          - Roblox project management and sync tool"
-                    echo "  • bun           - Fast JavaScript runtime and package manager"
+                    echo "  • pnpm          - Fast, disk space efficient package manager"
                     echo "  • run-in-roblox - Custom tool for running code in Roblox Studio"
                     echo "  • lune          - Luau scripting runtime for automation and tooling"
+                    echo "  • node.js (v24) - JavaScript runtime environment"
                     echo ""
-                    echo "🏗️ Ready to build scalable Roblox games with ECS architecture!"
+                    echo "🚀 Ready to build awesome Roblox experiences with TypeScript!"
                     echo ""
                   '';
                 }

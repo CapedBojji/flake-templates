@@ -1,0 +1,10 @@
+diff --git a/index.d.ts b/index.d.ts
+index e62180832ceae4805817df33df95a444df9b904d..835d3fb6f826f912ec6183ba44e0342892c0588b 100644
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -84,4 +84,4 @@ export namespace $env {
+ /**
+  * Returns the `NODE_ENV` variable
+  */
+-export const $NODE_ENV: string;
++export const $NODE_ENV: "development" | "production";

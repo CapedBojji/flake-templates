@@ -1,12 +1,12 @@
 {
-	"name": "example-development",
+	"name": "example-build",
 	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
 	"tree": {
 		"$className": "DataModel",
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
 			"TS": {
-				"$path": "out/server"
+				"$path": "dist/server"
 			}
 		},
 		"ReplicatedStorage": {
@@ -24,10 +24,10 @@
 				}
 			},
 			"TS": {
-				"$path": "out/shared"
+				"$path": "dist/shared"
 			},
 			"TS-types": {
-				"$path": "out/types"
+				"$path": "dist/types"
 			}
 		},
 		"StarterPlayer": {
@@ -35,7 +35,7 @@
 			"StarterPlayerScripts": {
 				"$className": "StarterPlayerScripts",
 				"TS": {
-					"$path": "out/client"
+					"$path": "dist/client"
 				}
 			}
 		},
@@ -43,16 +43,6 @@
 			"$className": "Workspace",
 			"$properties": {
 				"FilteringEnabled": true
-			},
-			"Baseplate": {
-				"$className": "Part",
-				"$properties": {
-					"Anchored": true,
-					"Color": [0.38823, 0.37254, 0.38823],
-					"Locked": true,
-					"Position": [0, -10, 0],
-					"Size": [50, 2, 50]
-				}
 			}
 		},
 		"HttpService": {
@@ -65,12 +55,6 @@
 			"$className": "SoundService",
 			"$properties": {
 				"RespectFilteringEnabled": true
-			}
-		},
-		"TextChatService": {
-			"$className": "TextChatService",
-			"$properties": {
-				"ChatVersion": "TextChatService"
 			}
 		}
 	}
